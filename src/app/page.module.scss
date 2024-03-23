@@ -25,24 +25,17 @@
   cursor: pointer;
   margin: 0;
 
+  --hover-event: block;
+
   &:hover::before{
+    display: var(--hover-event);
     content: attr(data-hint);
-    background:#d9444a;
+    background:#0c6aa1;
     color:#fff;
-    padding:.8em 1em;
+    padding:.3em .5em;
     position:absolute;
-    top: 10px;
     right: 10px;
-    margin-left:14px;
-  }
-  
-  @media screen and (max-width: 768px){
-    &::before{
-      content: "点击下方任意处可复制";
-      display: block;
-      background-color: #d9444a;
-      color: #fff;
-    }
+    text-align: center;
   }
     
 }
