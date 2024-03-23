@@ -1,0 +1,48 @@
+.container{
+  display: flex;
+  justify-content: space-between;
+  height: 98vh;
+
+  font-size: 2rem;
+
+  @media screen and (max-width: 768px){
+    
+    flex-direction: column;
+
+  }
+
+  textarea{
+    flex: .49;
+    height: 100%;
+    font-size: 2rem;
+  }
+
+}
+
+.result{
+  flex: .49;
+  height: 100%;
+  cursor: pointer;
+  margin: 0;
+
+  &:hover::before{
+    content: attr(data-hint);
+    background:#d9444a;
+    color:#fff;
+    padding:.8em 1em;
+    position:absolute;
+    top: 10px;
+    right: 10px;
+    margin-left:14px;
+  }
+  
+  @media screen and (max-width: 768px){
+    &::before{
+      content: "点击下方任意处可复制";
+      display: block;
+      background-color: #d9444a;
+      color: #fff;
+    }
+  }
+    
+}
