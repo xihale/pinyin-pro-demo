@@ -5,6 +5,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="zh">
+      <meta name="icon" content="/favicon.png" />
       <body>{children}</body>
     </html>
   )
