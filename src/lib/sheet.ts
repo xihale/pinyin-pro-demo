@@ -2,14 +2,7 @@ import { pinyin } from 'pinyin-pro';
 
 export type Tone = 'symbol' | 'num' | 'none';
 
-export const SAMPLE = [
-  '春晓',
-  '孟浩然',
-  '春眠不觉晓，',
-  '处处闻啼鸟。',
-  '夜来风雨声，',
-  '花落知多少。',
-].join('\n');
+export const SAMPLE = '你好，世界。';
 
 type Token =
   | { kind: 'hanzi'; ch: string; py: string }
