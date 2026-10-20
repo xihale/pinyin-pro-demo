@@ -15,7 +15,7 @@ bun run dev
 
 - Astro 静态站点，无前端框架
 - pinyin-pro 生成拼音，页面用标准 `<ruby>/<rt>` 逐字标注
-- 复制导出两种格式：双行段落式（PPT/Word 通用）与 Word 注音版（ruby，逐字对齐）
+- 「复制注音稿」为双行段落式（PPT/Word/微信通用）；「Word 注音版」下载 `.docx`，内嵌原生拼音指南（`w:ruby`，居中对齐），Word/WPS 打开即逐字对齐
 
 ## 许可
 

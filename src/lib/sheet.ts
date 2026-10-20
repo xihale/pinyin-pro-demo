@@ -209,33 +209,6 @@ const LATIN_STACK = "'Helvetica Neue',Arial,sans-serif";
 const RED = '#e1000f';
 const INK = '#111111';
 
-export function buildRubyHtml(text: string, tone: Tone, hanziPt: number) {
-  const pinyinPt = Math.max(8, Math.round(hanziPt * 0.42));
-
-  const paragraphs = text
-    .split('\n')
-    .map((line) => {
-      const tokens = tokenizeLine(line, tone);
-
-      const runs = tokens
-        .map((token) => {
-          if (token.kind === 'space') return ' ';
-          if (token.kind === 'hanzi') {
-            return `<ruby style="ruby-align:center;">${escapeHtml(token.ch)}<rt style="font-family:${LATIN_STACK};font-size:${pinyinPt}pt;line-height:1.15;color:${RED};">${escapeHtml(token.py)}</rt></ruby>`;
-          }
-          return token.kind === 'latin'
-            ? escapeHtml(token.text)
-            : escapeHtml(token.ch);
-        })
-        .join('');
-
-      return `<p style="margin:0 0 6pt;font-family:${HANZI_STACK};font-size:${hanziPt}pt;line-height:1.8;color:${INK};">${runs || '&nbsp;'}</p>`;
-    })
-    .join('');
-
-  return paragraphs;
-}
-
 export function buildUniversalHtml(text: string, tone: Tone, hanziPt: number) {
   const pinyinPt = Math.max(8, Math.round(hanziPt * 0.42));
 

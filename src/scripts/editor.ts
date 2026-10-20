@@ -1,12 +1,12 @@
 import {
   SAMPLE,
   buildPlainText,
-  buildRubyHtml,
   buildUniversalHtml,
   countHanzi,
   renderSheetHtml,
   type Tone,
 } from '../lib/sheet';
+import { buildRubyDocx } from '../lib/docx';
 
 type Size = 's' | 'm' | 'l';
 
@@ -797,18 +797,23 @@ if (sheet && count && status && copyButton && wordButton) {
     );
   };
 
-  const copyWord = () => {
+  const downloadWord = () => {
     if (!state.text.trim()) return;
-    writeClipboard(
-      wordButton,
-      buildRubyHtml(state.text, state.tone, HANZI_PT[state.size]),
-      buildPlainText(state.text, state.tone),
-      '已复制 Word 注音版，逐字对齐，粘贴到 Word 或 WPS 即为标准拼音',
-    );
+    const blob = new Blob([buildRubyDocx(state.text, state.tone, HANZI_PT[state.size])], {
+      type: 'application/vnd.openxmlformats-officedocument.wordprocessingml.document',
+    });
+    const url = URL.createObjectURL(blob);
+    const anchor = document.createElement('a');
+    anchor.href = url;
+    anchor.download = '注音稿.docx';
+    anchor.click();
+    URL.revokeObjectURL(url);
+    flash(wordButton, '已下载', 'copied');
+    announce('Word 注音文档已下载，拼音为原生指南格式，打开即可逐字对齐');
   };
 
   copyButton.addEventListener('click', copySheet);
-  wordButton.addEventListener('click', copyWord);
+  wordButton.addEventListener('click', downloadWord);
 
   const segments = Array.from(
     document.querySelectorAll<HTMLElement>('.segment'),
