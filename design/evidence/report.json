@@ -1,0 +1,609 @@
+[
+  {
+    "file": "page-1440x900.png",
+    "state": null,
+    "size": "1440x900",
+    "zoom": 1,
+    "animationWaitMs": 0,
+    "issues": [],
+    "lint": []
+  },
+  {
+    "file": "page-390x844.png",
+    "state": null,
+    "size": "390x844",
+    "zoom": 1,
+    "animationWaitMs": 0,
+    "issues": [],
+    "lint": []
+  },
+  {
+    "file": "page-1440x900-@2x.png",
+    "state": null,
+    "size": "1440x900",
+    "zoom": 2,
+    "animationWaitMs": 0,
+    "issues": [],
+    "lint": []
+  },
+  {
+    "file": "page-390x844-@2x.png",
+    "state": null,
+    "size": "390x844",
+    "zoom": 2,
+    "animationWaitMs": 0,
+    "issues": [],
+    "lint": []
+  },
+  {
+    "file": "motion-probe-empty",
+    "state": null,
+    "size": "1440x900",
+    "zoom": 1,
+    "group": "empty",
+    "motion": {
+      "load": {
+        "elements": 31,
+        "loops": 0,
+        "maxMove": 6,
+        "maxSize": 0,
+        "maxOpacity": 0.96,
+        "top": [
+          {
+            "el": "div.line",
+            "move": 6,
+            "size": 0,
+            "opacity": 0.96,
+            "loop": false,
+            "sources": [
+              "css:rise"
+            ]
+          },
+          {
+            "el": "div.line",
+            "move": 6,
+            "size": 0,
+            "opacity": 0.95,
+            "loop": false,
+            "sources": [
+              "css:rise"
+            ]
+          },
+          {
+            "el": "div.line",
+            "move": 5,
+            "size": 0,
+            "opacity": 0.91,
+            "loop": false,
+            "sources": [
+              "css:rise"
+            ]
+          },
+          {
+            "el": "div.line",
+            "move": 5,
+            "size": 0,
+            "opacity": 0.9,
+            "loop": false,
+            "sources": [
+              "css:rise"
+            ]
+          },
+          {
+            "el": "div.line",
+            "move": 5,
+            "size": 0,
+            "opacity": 0.84,
+            "loop": false,
+            "sources": [
+              "css:rise"
+            ]
+          },
+          {
+            "el": "div.line",
+            "move": 5,
+            "size": 0,
+            "opacity": 0.83,
+            "loop": false,
+            "sources": [
+              "css:rise"
+            ]
+          },
+          {
+            "el": "span.cell",
+            "move": 2,
+            "size": 0,
+            "opacity": 0,
+            "loop": false,
+            "sources": [
+              "css:py-in"
+            ]
+          },
+          {
+            "el": "span.cell",
+            "move": 2,
+            "size": 0,
+            "opacity": 0,
+            "loop": false,
+            "sources": [
+              "css:py-in"
+            ]
+          }
+        ]
+      },
+      "steps": {
+        "elements": 1,
+        "loops": 0,
+        "maxMove": 0,
+        "maxSize": 0,
+        "maxOpacity": 0.72,
+        "top": [
+          {
+            "el": "button#copy.primary",
+            "move": 0,
+            "size": 0,
+            "opacity": 0.72,
+            "loop": false,
+            "sources": [
+              "transition:opacity"
+            ]
+          }
+        ]
+      },
+      "hero": {
+        "elements": 0,
+        "loops": 0,
+        "maxMove": 0,
+        "maxSize": 0,
+        "maxOpacity": 0,
+        "top": [],
+        "layers": 0
+      },
+      "scroll": {
+        "elements": 0,
+        "loops": 0,
+        "maxMove": 0,
+        "maxSize": 0,
+        "maxOpacity": 0,
+        "top": [],
+        "scrollable": false
+      }
+    },
+    "issues": []
+  },
+  {
+    "file": "motion-probe-copied",
+    "state": null,
+    "size": "1440x900",
+    "zoom": 1,
+    "group": "copied",
+    "motion": {
+      "load": {
+        "elements": 31,
+        "loops": 0,
+        "maxMove": 6,
+        "maxSize": 0,
+        "maxOpacity": 0.96,
+        "top": [
+          {
+            "el": "div.line",
+            "move": 6,
+            "size": 0,
+            "opacity": 0.96,
+            "loop": false,
+            "sources": [
+              "css:rise"
+            ]
+          },
+          {
+            "el": "div.line",
+            "move": 6,
+            "size": 0,
+            "opacity": 0.95,
+            "loop": false,
+            "sources": [
+              "css:rise"
+            ]
+          },
+          {
+            "el": "div.line",
+            "move": 5,
+            "size": 0,
+            "opacity": 0.91,
+            "loop": false,
+            "sources": [
+              "css:rise"
+            ]
+          },
+          {
+            "el": "div.line",
+            "move": 5,
+            "size": 0,
+            "opacity": 0.89,
+            "loop": false,
+            "sources": [
+              "css:rise"
+            ]
+          },
+          {
+            "el": "div.line",
+            "move": 5,
+            "size": 0,
+            "opacity": 0.84,
+            "loop": false,
+            "sources": [
+              "css:rise"
+            ]
+          },
+          {
+            "el": "div.line",
+            "move": 5,
+            "size": 0,
+            "opacity": 0.83,
+            "loop": false,
+            "sources": [
+              "css:rise"
+            ]
+          },
+          {
+            "el": "span.cell",
+            "move": 2,
+            "size": 0,
+            "opacity": 0,
+            "loop": false,
+            "sources": [
+              "css:py-in"
+            ]
+          },
+          {
+            "el": "span.cell",
+            "move": 2,
+            "size": 0,
+            "opacity": 0,
+            "loop": false,
+            "sources": [
+              "css:py-in"
+            ]
+          }
+        ]
+      },
+      "steps": {
+        "elements": 1,
+        "loops": 0,
+        "maxMove": 2,
+        "maxSize": 0.03,
+        "maxOpacity": 0,
+        "top": [
+          {
+            "el": "button#copy.primary",
+            "move": 2,
+            "size": 0.03,
+            "opacity": 0,
+            "loop": false,
+            "sources": [
+              "transition:background-color",
+              "transition:transform",
+              "css:stamp"
+            ]
+          }
+        ]
+      },
+      "hero": {
+        "elements": 0,
+        "loops": 0,
+        "maxMove": 0,
+        "maxSize": 0,
+        "maxOpacity": 0,
+        "top": [],
+        "layers": 0
+      },
+      "scroll": {
+        "elements": 0,
+        "loops": 0,
+        "maxMove": 0,
+        "maxSize": 0,
+        "maxOpacity": 0,
+        "top": [],
+        "scrollable": false
+      }
+    },
+    "issues": []
+  },
+  {
+    "file": "motion-probe-tone",
+    "state": null,
+    "size": "1440x900",
+    "zoom": 1,
+    "group": "tone",
+    "motion": {
+      "load": {
+        "elements": 32,
+        "loops": 0,
+        "maxMove": 49,
+        "maxSize": 0,
+        "maxOpacity": 0.96,
+        "top": [
+          {
+            "el": "span.segment-indicator",
+            "move": 49,
+            "size": 0,
+            "opacity": 0,
+            "loop": false,
+            "sources": [
+              "transition:transform"
+            ]
+          },
+          {
+            "el": "div.line",
+            "move": 6,
+            "size": 0,
+            "opacity": 0.96,
+            "loop": false,
+            "sources": [
+              "css:rise"
+            ]
+          },
+          {
+            "el": "div.line",
+            "move": 6,
+            "size": 0,
+            "opacity": 0.95,
+            "loop": false,
+            "sources": [
+              "css:rise"
+            ]
+          },
+          {
+            "el": "div.line",
+            "move": 5,
+            "size": 0,
+            "opacity": 0.91,
+            "loop": false,
+            "sources": [
+              "css:rise"
+            ]
+          },
+          {
+            "el": "div.line",
+            "move": 5,
+            "size": 0,
+            "opacity": 0.89,
+            "loop": false,
+            "sources": [
+              "css:rise"
+            ]
+          },
+          {
+            "el": "div.line",
+            "move": 5,
+            "size": 0,
+            "opacity": 0.84,
+            "loop": false,
+            "sources": [
+              "css:rise"
+            ]
+          },
+          {
+            "el": "div.line",
+            "move": 5,
+            "size": 0,
+            "opacity": 0.83,
+            "loop": false,
+            "sources": [
+              "css:rise"
+            ]
+          },
+          {
+            "el": "span.cell",
+            "move": 2,
+            "size": 0,
+            "opacity": 0,
+            "loop": false,
+            "sources": [
+              "css:py-in"
+            ]
+          }
+        ]
+      },
+      "steps": {
+        "elements": 1,
+        "loops": 0,
+        "maxMove": 49,
+        "maxSize": 0,
+        "maxOpacity": 0,
+        "top": [
+          {
+            "el": "span.segment-indicator",
+            "move": 49,
+            "size": 0,
+            "opacity": 0,
+            "loop": false,
+            "sources": [
+              "transition:transform"
+            ]
+          }
+        ]
+      },
+      "hero": {
+        "elements": 0,
+        "loops": 0,
+        "maxMove": 0,
+        "maxSize": 0,
+        "maxOpacity": 0,
+        "top": [],
+        "layers": 0
+      },
+      "scroll": {
+        "elements": 0,
+        "loops": 0,
+        "maxMove": 0,
+        "maxSize": 0,
+        "maxOpacity": 0,
+        "top": [],
+        "scrollable": false
+      }
+    },
+    "issues": []
+  },
+  {
+    "file": "motion-entry-end.jpg",
+    "state": null,
+    "size": "1440x900",
+    "zoom": 1,
+    "group": "entry",
+    "issues": [],
+    "frames": {
+      "start": {
+        "file": "motion-entry-start.jpg",
+        "source": "Page.screencastFrame",
+        "timeMs": 150
+      },
+      "mid": {
+        "file": "motion-entry-mid.jpg",
+        "source": "Page.screencastFrame",
+        "timeMs": 456
+      },
+      "end": {
+        "file": "motion-entry-end.jpg",
+        "source": "Page.captureScreenshot",
+        "timeMs": 2446
+      }
+    },
+    "sampling": {
+      "mode": "entry"
+    },
+    "durationMs": 2446,
+    "consistency": {
+      "status": "matched",
+      "reference": "motion-entry-end.jpg",
+      "different": false,
+      "changedPixels": 0,
+      "maxTilePixels": 0,
+      "pixelRatio": 0
+    }
+  },
+  {
+    "file": "motion-empty-end.jpg",
+    "state": null,
+    "size": "1440x900",
+    "zoom": 1,
+    "group": "empty",
+    "issues": [],
+    "frames": {
+      "start": {
+        "file": "motion-empty-start.jpg",
+        "source": "Page.captureScreenshot",
+        "timeMs": 758
+      },
+      "mid": {
+        "file": "motion-empty-mid.jpg",
+        "source": "Page.screencastFrame",
+        "timeMs": 825
+      },
+      "end": {
+        "file": "motion-empty-end.jpg",
+        "source": "Page.captureScreenshot",
+        "timeMs": 2299
+      }
+    },
+    "sampling": {
+      "mode": "action",
+      "step": 3,
+      "action": "key",
+      "raw": "key Backspace"
+    },
+    "durationMs": 2299,
+    "consistency": {
+      "status": "matched",
+      "reference": "motion-empty-end.jpg",
+      "different": false,
+      "changedPixels": 53,
+      "maxTilePixels": 32,
+      "pixelRatio": 0.00004089506172839506
+    }
+  },
+  {
+    "file": "motion-copied-end.jpg",
+    "state": null,
+    "size": "1440x900",
+    "zoom": 1,
+    "group": "copied",
+    "issues": [],
+    "frames": {
+      "start": {
+        "file": "motion-copied-start.jpg",
+        "source": "Page.captureScreenshot",
+        "timeMs": 571
+      },
+      "mid": {
+        "file": "motion-copied-mid.jpg",
+        "source": "Page.screencastFrame",
+        "timeMs": 744
+      },
+      "end": {
+        "file": "motion-copied-end.jpg",
+        "source": "Page.captureScreenshot",
+        "timeMs": 2198
+      }
+    },
+    "sampling": {
+      "mode": "action",
+      "step": 1,
+      "action": "click",
+      "raw": "click #copy"
+    },
+    "durationMs": 2198,
+    "consistency": {
+      "status": "mismatch",
+      "reference": "motion-copied-end.jpg",
+      "different": true,
+      "changedPixels": 610,
+      "maxTilePixels": 140,
+      "pixelRatio": 0.000470679012345679,
+      "original": "record-copied-stream-end.jpg"
+    },
+    "warnings": [
+      "录屏末帧与静止截图差异明显，可能没拍全；静止终态以 motion-copied-end.jpg 为准，已补为录像最后一帧，原末帧保留在 record-copied-stream-end.jpg；过渡请单独重录：node '/home/xihale/.agents/skills/oil-ui/scripts/shoot.mjs' 'http://127.0.0.1:4400' --timeout-scale 2 --out '/home/xihale/Desktop/learning/nextjs/pinyin-pro-demo/design/evidence' --size '1440x900' --zoom 1 --steps 'copied: click #copy; wait 300' --record --hold 2000"
+    ]
+  },
+  {
+    "file": "motion-tone-end.jpg",
+    "state": null,
+    "size": "1440x900",
+    "zoom": 1,
+    "group": "tone",
+    "issues": [],
+    "frames": {
+      "start": {
+        "file": "motion-tone-start.jpg",
+        "source": "Page.captureScreenshot",
+        "timeMs": 576
+      },
+      "mid": {
+        "file": "motion-tone-mid.jpg",
+        "source": "Page.screencastFrame",
+        "timeMs": 675
+      },
+      "end": {
+        "file": "motion-tone-end.jpg",
+        "source": "Page.captureScreenshot",
+        "timeMs": 2257
+      }
+    },
+    "sampling": {
+      "mode": "action",
+      "step": 1,
+      "action": "click",
+      "raw": "click [data-segment=tone] button[data-value=num]"
+    },
+    "durationMs": 2257,
+    "consistency": {
+      "status": "matched",
+      "reference": "motion-tone-end.jpg",
+      "different": false,
+      "changedPixels": 0,
+      "maxTilePixels": 0,
+      "pixelRatio": 0
+    }
+  }
+]

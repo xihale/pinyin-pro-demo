@@ -1,24 +1,20 @@
 {
   "name": "pinyin-pro-demo",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": true,
+  "type": "module",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "check": "astro check"
   },
   "dependencies": {
-    "@types/node": "20.11.30",
-    "@types/react": "18.2.69",
-    "@types/react-dom": "18.2.22",
-    "eslint": "8.57.0",
-    "eslint-config-next": "14.1.4",
-    "next": "14.1.4",
-    "pinyin-pro": "^3.19.6",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "sass": "^1.72.0",
-    "typescript": "5.4.3"
+    "pinyin-pro": "^3.29.5"
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.11",
+    "astro": "^7.4.1",
+    "typescript": "^5.9.3"
   }
 }

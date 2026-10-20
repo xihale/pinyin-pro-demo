@@ -1,0 +1,81 @@
+---
+import '../styles/global.css';
+import {
+  SAMPLE,
+  countHanzi,
+  renderSheetHtml,
+} from '../lib/sheet';
+
+const initialSheet = renderSheetHtml(SAMPLE, 'symbol');
+const initialCount = countHanzi(SAMPLE);
+---
+
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>注音稿 · 汉字逐字注音</title>
+    <meta
+      name="description"
+      content="直接编辑中文，拼音逐字落在汉字上方，复制后粘进 Word 或 PPT。"
+    />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  </head>
+  <body>
+    <div class="app">
+      <header class="bar head">
+        <div class="brand">
+          <span class="mark" aria-hidden="true"></span>
+          <h1>注音稿</h1>
+        </div>
+        <div class="actions">
+          <button class="ghost" id="copy-word" type="button">Word 注音版</button>
+          <button class="primary" id="copy" type="button">复制注音稿</button>
+        </div>
+      </header>
+
+      <main class="stage">
+        <div
+          class="sheet is-entering"
+          id="sheet"
+          contenteditable="true"
+          role="textbox"
+          aria-multiline="true"
+          aria-label="注音稿，直接输入或粘贴中文"
+          spellcheck="false"
+          data-empty="false"
+          set:html={initialSheet}
+        ></div>
+      </main>
+
+      <footer class="bar foot">
+        <div class="field">
+          <span class="field-label">声调</span>
+          <div class="segment" data-segment="tone" role="group" aria-label="声调">
+            <span class="segment-indicator" aria-hidden="true"></span>
+            <button type="button" data-value="symbol" aria-pressed="true">符号</button>
+            <button type="button" data-value="num" aria-pressed="false">数字</button>
+            <button type="button" data-value="none" aria-pressed="false">无</button>
+          </div>
+        </div>
+        <div class="field">
+          <span class="field-label">字号</span>
+          <div class="segment" data-segment="size" role="group" aria-label="字号">
+            <span class="segment-indicator" aria-hidden="true"></span>
+            <button type="button" data-value="s" aria-pressed="false">小</button>
+            <button type="button" data-value="m" aria-pressed="true">中</button>
+            <button type="button" data-value="l" aria-pressed="false">大</button>
+          </div>
+        </div>
+        <p class="count" id="count">{initialCount} 字</p>
+      </footer>
+    </div>
+
+    <p class="sr-only" id="status" role="status" aria-live="polite"></p>
+
+    <script>
+      import '../scripts/editor';
+    </script>
+  </body>
+</html>
